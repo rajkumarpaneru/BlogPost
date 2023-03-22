@@ -13,4 +13,9 @@ class PostController extends Controller
         Post::create($request->all());
         return response()->json('Post Created successfully.', 201);
     }
+
+    public function show(Post $post)
+    {
+        return response()->json($post, 200);
+    }
 }
