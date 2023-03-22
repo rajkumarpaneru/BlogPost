@@ -18,15 +18,4 @@ class AddDeletedAtInPosts extends Migration
         });
     }
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::table('posts', function (Blueprint $table) {
-
-        });
-    }
 }
