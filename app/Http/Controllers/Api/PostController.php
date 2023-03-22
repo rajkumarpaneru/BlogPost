@@ -24,4 +24,11 @@ class PostController extends Controller
         $post->update($request->all());
         return response()->json($post, 200);
     }
+
+    public function index()
+    {
+        return response()->json(Post::all(), 200);
+    }
+
+
 }
